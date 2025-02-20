@@ -1,9 +1,9 @@
-import { Header } from '@components/layout';
+import { Navbar } from '@components/layout';
 
 export function App() {
   return (
     <div>
-      <Header />
+      <Navbar />
     </div>
   )
 }
