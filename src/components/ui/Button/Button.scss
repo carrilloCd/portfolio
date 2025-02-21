@@ -45,4 +45,13 @@
       justify-content: center;
     }
   }
+
+  &--link {
+    font-size: 1.6rem;
+    border-radius: 0;
+    background-color: transparent;
+    color: $accent-color;
+    border-bottom: 2px solid $accent-color;
+    gap: 0.4rem;
+  }
 }

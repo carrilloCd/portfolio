@@ -1,0 +1,78 @@
+@use '../../../sass/abstract/variables' as *;
+
+.project {
+  display: flex;
+  gap: 4.8rem;
+
+  &__image-container {
+    border-radius: 1.2rem;
+    position: relative;
+    width: 60rem;
+    padding: 12.6rem 5.7rem;
+    background-color: $secondary-background-color;
+  }
+
+  &__tag {
+    position: absolute;
+    top: 1.6rem;
+    left: 1.6rem;
+    border-radius: 10rem;
+    padding: 0.8rem 1.6rem;
+    display: inline-block;
+    background-color: $main-background-color;
+    color: $white-color;
+  }
+
+  &__box-info {
+    padding: 6rem 0;
+  }
+
+  &__title {
+    font-family: $font-secondary;
+    margin-bottom: 1.6rem;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    color: $white-color;
+  }
+
+  &__description {
+    margin-bottom: 3.2rem;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+
+  &__table {
+    width: 100%;
+    margin-bottom: 4.8rem;
+
+    th,
+    td {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 2.4rem;
+      border-bottom: 1px solid $secondary-background-color;
+    }
+
+    th {
+      padding-bottom: 1.6rem;
+      font-family: $font-secondary;
+      text-transform: uppercase;
+      text-align: start;
+      color: $white-color;
+    }
+
+    td {
+      padding: 1.6rem 0;
+    }
+
+    td:last-child {
+      text-align: right;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 2.4rem;
+    align-items: center;
+  }
+}

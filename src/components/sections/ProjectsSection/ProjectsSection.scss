@@ -1,0 +1,31 @@
+@use '../../../sass/abstract/variables' as *;
+
+.projects {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 8rem 10.8rem;
+  border-bottom: 1px solid $secondary-background-color;
+
+  header {
+    width: 60rem;
+    margin-bottom: 8rem;
+  }
+
+  &__title {
+    margin-bottom: 0.8rem;
+    font-size: 7.6rem;
+    line-height: 7.6rem;
+    color: $white-color;
+  }
+
+  &__description {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12rem;
+  }
+}

@@ -1,11 +1,12 @@
 import { Navbar } from '@components/layout';
-import { HeroSection } from '@components/sections';
+import { HeroSection, ProjectsSection } from '@components/sections';
 
-export function App() {
+export const App: React.FC = () => {
   return (
     <div>
       <Navbar />
       <HeroSection />
+      <ProjectsSection />
     </div>
   )
 }
