@@ -14,7 +14,18 @@ interface ProjectCardProps {
   client?: string;
 }
 
-export const ProjectCard: React.FC<ProjectCardProps> = ({ tag, img, title, description, client, role, year, demoUrl, githubUrl, viewUrl }) => {
+export const ProjectCard: React.FC<ProjectCardProps> = ({
+  tag,
+  img,
+  title,
+  description,
+  client,
+  role,
+  year,
+  demoUrl,
+  githubUrl,
+  viewUrl
+}) => {
   return (
     <article className='project'>
       <div className='project__image-container'>
