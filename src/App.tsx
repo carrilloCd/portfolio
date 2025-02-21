@@ -1,5 +1,5 @@
 import { Navbar } from '@components/layout';
-import { HeroSection, ProjectsSection, AboutSection } from '@components/sections';
+import { HeroSection, ProjectsSection, AboutSection, ContactSection } from '@components/sections';
 
 export const App: React.FC = () => {
   return (
@@ -8,6 +8,7 @@ export const App: React.FC = () => {
       <HeroSection />
       <ProjectsSection />
       <AboutSection />
+      <ContactSection />
     </div>
   )
 }

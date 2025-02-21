@@ -5,7 +5,7 @@ interface IButtonProps {
   url?: string;
   icon?: ReactNode;
   text?: string;
-  variant?: 'primary' | 'icon' | 'link';
+  variant?: 'primary' | 'icon' | 'link' | 'secondary';
 }
 export const Button: React.FC<IButtonProps> = ({ icon, text, variant, url }) => {
   const ButtonContent = (
@@ -23,7 +23,7 @@ export const Button: React.FC<IButtonProps> = ({ icon, text, variant, url }) => 
   }
 
   return (
-    <button className={`button ${variant}`}>
+    <button className={`button button--${variant}`}>
       {ButtonContent}
     </button>
   )
