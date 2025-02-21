@@ -1,0 +1,48 @@
+@use '../../../sass/abstract/variables' as *;
+
+.button {
+  border-radius: 10rem;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &--primary {
+    padding: 0.5rem 0.5rem 0.5rem 2.4rem;
+    gap: 1.2rem;
+
+    background-color: $accent-color;
+    color: $main-background-color;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+
+    span:last-child {
+      border-radius: 50%;
+      width: 4rem;
+      height: 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $white-color;
+      background-color: #000;
+    }
+
+    span svg {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  &--icon {
+    span {
+      border-radius: 50%;
+      background-color: $icon-background-color;
+      width: 5.4rem;
+      height: 5.4rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

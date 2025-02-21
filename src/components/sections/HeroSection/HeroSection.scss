@@ -1,0 +1,36 @@
+@use '../../../sass/abstract/variables' as *;
+
+.hero-section {
+  border-bottom: 1px solid $divider-gray-color;
+  margin: 0 auto;
+  padding: 3rem 10.8rem 8rem 10.8rem;
+  max-width: 144rem;
+
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+
+  &__title {
+    margin-bottom: 1.2rem;
+    font-size: 8rem;
+    font-weight: 400;
+    line-height: 9.9rem;
+    color: $white-color;
+  }
+
+  &__description {
+    margin-bottom: 3.2rem;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+
+  &__image {
+    width: 60rem;
+    height: 70rem;
+  }
+
+  &__contact-buttons {
+    display: flex;
+    gap: 1.6rem;
+  }
+}
