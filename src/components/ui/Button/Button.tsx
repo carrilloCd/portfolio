@@ -6,8 +6,9 @@ interface IButtonProps {
   icon?: ReactNode;
   text?: string;
   variant?: 'primary' | 'icon' | 'link' | 'secondary';
+  blank?: boolean;
 }
-export const Button: React.FC<IButtonProps> = ({ icon, text, variant, url }) => {
+export const Button: React.FC<IButtonProps> = ({ icon, text, variant, url, blank }) => {
   const ButtonContent = (
     <>
       {text && <span>{text}</span>}
@@ -17,7 +18,7 @@ export const Button: React.FC<IButtonProps> = ({ icon, text, variant, url }) => 
 
   if (url) {
     return (
-      <a href={url} className={`button button--${variant}`} target='_blank'>
+      <a href={url} className={`button button--${variant}`} target={blank ? '_blank' : '_self'} rel="noopener noreferrer">
         {ButtonContent}
       </a>)
   }

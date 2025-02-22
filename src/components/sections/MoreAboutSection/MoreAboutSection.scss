@@ -1,13 +1,15 @@
 @use '../../../sass/abstract/variables' as *;
 
-.about-section {
-  border-bottom: 1px solid $secondary-background-color;
-  padding: 12.2rem 10.8rem 41.6rem 10.8rem;
+.more-about {
+  padding: 16rem 10.8rem 4rem 10.8rem;
   margin: 0 auto;
   max-width: 144rem;
 
-  display: flex;
-  gap: 21.3rem;
+  &__details {
+    margin-bottom: 12rem;
+    display: flex;
+    gap: 21.3rem;
+  }
 
   &__title {
     flex: 1 0 30.7rem;
@@ -28,5 +30,18 @@
     margin-bottom: 5.3rem;
     font-size: 1.8rem;
     line-height: 2.7rem;
+  }
+
+  &__contact-buttons {
+    display: flex;
+    gap: 1.6rem;
+  }
+
+  &__photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.6rem;
+    background-color: $text-color;
   }
 }

@@ -1,0 +1,40 @@
+@use '../../../sass/abstract/variables' as *;
+
+.capabilities-section {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 8rem 10.8rem;
+  border-bottom: 1px solid $secondary-background-color;
+  display: flex;
+
+  &__title {
+    flex: 1 0 50%;
+    font-size: 7.6rem;
+    line-height: 7.6rem;
+    color: $white-color;
+  }
+
+  &__description {
+    margin-bottom: 3.2rem;
+    font-size: 1.8rem;
+  }
+
+  &__list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    list-style: none;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    font-weight: 700;
+  }
+
+  &__tag {
+    border: 1px solid $divider-gray-color;
+    padding: 2rem 4rem;
+    border-radius: 10rem;
+    display: inline-block;
+    color: $white-color;
+    font-family: $font-secondary;
+  }
+}
