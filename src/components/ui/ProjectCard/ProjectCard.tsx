@@ -12,6 +12,7 @@ interface ProjectCardProps {
   githubUrl?: string;
   viewUrl?: string;
   client?: string;
+  imgResponsive?: string;
 }
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -24,17 +25,18 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   year,
   demoUrl,
   githubUrl,
-  viewUrl
+  viewUrl,
+  imgResponsive
 }) => {
   return (
     <article className='project'>
       <div className='project__image-container'>
-        {tag && (
-          <p className='project__tag'>{tag}</p>
-        )
-        }
+        {tag && (<p className='project__tag'>{tag}</p>)}
 
-        <img src={img} alt="Photo of project" />
+        <picture>
+          <source srcSet={img} media='(min-width: 901px)' />
+          <img src={imgResponsive} alt="Project photo" />
+        </picture>
       </div>
 
       <div className='project__box-info'>

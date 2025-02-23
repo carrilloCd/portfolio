@@ -5,6 +5,9 @@ import { ProjectCard } from '@components/ui'
 import landingProject from '../../../assets/images/landing-project.png'
 import blogSite from '../../../assets/images/blog-site.png'
 import eCommerce from '../../../assets/images/e-commerce.png'
+import landingProject900 from '../../../assets/images/landing-project-900.png'
+import blogSite900 from '../../../assets/images/blogSite900.png'
+import eCommerce900 from '../../../assets/images/eCommerce900.png'
 
 export const ProjectsSection: React.FC = () => {
   return (
@@ -24,6 +27,7 @@ export const ProjectsSection: React.FC = () => {
           role='Front-end developer'
           demoUrl='#'
           githubUrl='#'
+          imgResponsive={landingProject900}
         />
 
         <ProjectCard
@@ -34,6 +38,7 @@ export const ProjectsSection: React.FC = () => {
           year='2022'
           role='Front-end developer'
           viewUrl='#'
+          imgResponsive={blogSite900}
         />
 
         <ProjectCard
@@ -45,6 +50,7 @@ export const ProjectsSection: React.FC = () => {
           role='Front-end developer'
           demoUrl='#'
           githubUrl='#'
+          imgResponsive={eCommerce900}
         />
 
       </div>

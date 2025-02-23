@@ -1,21 +1,44 @@
 @use '../../../sass/abstract/variables' as *;
+@use '../../../sass/abstract/mixins' as *;
 
 .projects {
-  max-width: 144rem;
+  max-width: 130rem;
   margin: 0 auto;
   padding: 8rem 10.8rem;
   border-bottom: 1px solid $secondary-background-color;
 
+  @include respond(tab-port) {
+    padding: 6.4rem 10.8rem;
+  }
+
+  @include respond(phone) {
+    padding: 6.4rem 1.6rem;
+  }
+
+  @include respond(big-desktop) {
+    max-width: 144rem;
+  }
+
   header {
     width: 60rem;
     margin-bottom: 8rem;
+
+    @include respond(phone) {
+      margin-bottom: 6.4rem;
+    }
   }
 
   &__title {
     margin-bottom: 0.8rem;
-    font-size: 7.6rem;
-    line-height: 7.6rem;
+    font-size: 6rem;
+    line-height: 6rem;
     color: $white-color;
+
+    @include respond(phone) {
+      font-size: 4.3rem;
+      line-height: 4.3rem;
+      margin-bottom: 1.2rem;
+    }
   }
 
   &__description {

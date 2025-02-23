@@ -1,14 +1,14 @@
 import './HeroSection.scss';
 import { Button } from '@components/ui';
 
-import img from '../../../assets/images/hero-image.png'
+// import img from '../../../assets/images/hero-image.png'
 
 export const HeroSection: React.FC = () => {
   return (
     <section className='hero-section'>
-      <div>
-        <h2 className='hero-section__title'>Hi, I am <br /> Carlos Carrillo.</h2>
-        <p className='hero-section__description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quia odit perferendis reprehenderit sed esse earum </p>
+      <div className='hero-section__box-info'>
+        <h1 className='hero-section__title'>Hi, I am <br /> Carlos Carrillo.</h1>
+        <p className='hero-section__description'>A Sydney based front-end developer <br /> passionate about building accessible and user friendly websites. </p>
 
         <div className='hero-section__contact-buttons'>
           <Button
@@ -50,7 +50,7 @@ export const HeroSection: React.FC = () => {
       </div>
 
       <div className="hero-section__image">
-        <img src={img} alt="carlos carrillo photo" />
+        {/* <img src={img} alt="carlos carrillo photo" /> */}
       </div>
 
     </section>

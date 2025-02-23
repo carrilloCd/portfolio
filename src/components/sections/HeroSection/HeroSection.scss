@@ -1,32 +1,92 @@
 @use '../../../sass/abstract/variables' as *;
+@use '../../../sass/abstract/mixins' as *;
 
 .hero-section {
   border-bottom: 1px solid $divider-gray-color;
   margin: 0 auto;
   padding: 3rem 10.8rem 8rem 10.8rem;
-  max-width: 144rem;
+  max-width: 130rem;
 
   display: flex;
   align-items: center;
-  gap: 8rem;
+  gap: 4rem;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6.4rem;
+  }
+
+  @include respond(phone) {
+    padding: 4rem 1.6rem;
+    padding-bottom: 6.4rem;
+  }
+
+  @include respond(big-desktop) {
+    padding: 3rem 10.8rem 8rem 10.8rem;
+    max-width: 144rem;
+  }
+
+  &__box-info {
+    flex: 1 0 50%;
+
+    @include respond(tab-land) {
+      // width: 100%;
+    }
+  }
 
   &__title {
     margin-bottom: 1.2rem;
-    font-size: 8rem;
+    font-size: 7rem;
     font-weight: 400;
-    line-height: 9.9rem;
+    line-height: 6.9rem;
     color: $white-color;
+
+    @include respond(phone) {
+      font-size: 5.7rem;
+      line-height: 5.7rem;
+    }
+
+    @include respond(big-desktop) {
+      font-size: 8rem;
+      font-weight: 400;
+      line-height: 9.9rem;
+    }
   }
 
   &__description {
     margin-bottom: 3.2rem;
     font-size: 1.8rem;
     line-height: 2.7rem;
+
+    @include respond(phone) {
+      font-size: 1.6rem;
+      line-height: 2.56rem;
+    }
   }
 
   &__image {
-    width: 60rem;
-    height: 70rem;
+    border-radius: 1.6rem;
+    background-image: url('../../../assets/images/hero-image.png');
+    width: 100%;
+    height: 50rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+
+    @include respond(tab-port) {
+      background-position: center;
+    }
+
+    @include respond(phone) {
+      background-size: cover;
+      background-position: 50% 0;
+    }
+
+    @include respond(big-desktop) {
+      width: 60rem;
+      height: 70rem;
+    }
   }
 
   &__contact-buttons {

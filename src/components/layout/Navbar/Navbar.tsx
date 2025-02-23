@@ -3,21 +3,19 @@ import { Link } from 'react-router'
 
 export const Navbar: React.FC = () => {
   return (
-    <div className='navbar'>
-      <header className='navbar__content'>
-        <h1 className='navbar__title'>
-          <Link to='/'>
-            Carlos Carrillo
-          </Link>
-        </h1>
+    <nav className='navbar'>
+      <div className='navbar__logo'>
+        <Link to='/'>
+          Carlos Carrillo
+        </Link>
+      </div>
 
-        <nav className='navbar__menu'>
-          <a href="#work" className='navbar__item'>Work</a>
-          <Link to="about" className='navbar__item'>About</Link>
-          <a href="#contact" className='navbar__item'>Contact</a>
-        </nav>
-
-      </header>
-    </div>
+      <ul className='navbar__menu'>
+        <li><a href="#work" className='navbar__item'>Work</a></li>
+        <li><Link to="about" className='navbar__item'>About</Link></li>
+        <li><a href="#contact" className='navbar__item'>Contact</a></li>
+      </ul>
+      <div className='navbar__bars'></div>
+    </nav>
   )
 }

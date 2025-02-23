@@ -67,6 +67,9 @@ export const ContactSection: React.FC = () => {
       </div>
 
       <Form />
+      <footer>
+        <p>&copy; 2025 Carlos Carrillo</p>
+      </footer>
     </section>
   )
 }

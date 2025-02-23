@@ -1,18 +1,47 @@
 @use '../../../sass/abstract/variables' as *;
+@use '../../../sass/abstract/mixins' as *;
 
 .contact {
-  max-width: 144rem;
+  max-width: 130rem;
   margin: 0 auto;
   padding: 5.5rem 10.8rem 8rem 10.8rem;
   display: flex;
   gap: 2.4rem;
 
+  & > footer {
+    display: none;
+  }
+
+  @include respond(tab-port) {
+    flex-direction: column;
+    gap: 4rem;
+    padding: 6.4rem 10.8rem;
+
+    & > footer {
+      display: block;
+    }
+  }
+
+  @include respond(phone) {
+    padding: 6.4rem 1.6rem;
+  }
+
+  @include respond(big-desktop) {
+    max-width: 144rem;
+  }
+
   &__box {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 1 0 50%;
     gap: 36rem;
     justify-content: space-between;
+
+    @include respond(tab-port) {
+      footer {
+        display: none;
+      }
+    }
   }
 
   &__title {
@@ -20,6 +49,11 @@
     font-size: 7.6rem;
     line-height: 7.6rem;
     color: $white-color;
+
+    @include respond(tab-port) {
+      font-size: 4.3rem;
+      line-height: 4.3rem;
+    }
   }
 
   &__paragraph {
@@ -28,6 +62,11 @@
     gap: 0.8rem;
     font-size: 1.8rem;
     line-height: 2.7rem;
+
+    @include respond(tab-port) {
+      font-size: 1.6rem;
+      line-height: 2.5rem;
+    }
 
     a {
       color: $white-color;
@@ -40,6 +79,10 @@
     margin-top: 4rem;
     display: flex;
     gap: 2.4rem;
+
+    @include respond(tab-port) {
+      gap: 3.2rem;
+    }
 
     svg {
       width: 3.2rem;
