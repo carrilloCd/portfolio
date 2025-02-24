@@ -2,7 +2,7 @@ import './ExperienceSection.scss'
 
 export const ExperienceSection: React.FC = () => {
   return (
-    <section className="experience-section">
+    <section className="experience-section" id='work'>
       <h2 className='experience-section__title'>My Experience</h2>
 
       <div>
