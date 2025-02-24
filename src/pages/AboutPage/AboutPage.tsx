@@ -1,6 +1,6 @@
 import './AboutPage.scss'
 import { Navbar } from '@components/layout';
-import { ContactSection, ExperienceSection, CapabilitiesSection, MoreAboutSection } from '@components/sections';
+import { ContactSection, ExperienceSection, CapabilitiesSection, About } from '@components/sections';
 
 
 
@@ -9,7 +9,7 @@ export const AboutPage: React.FC = () => {
   return (
     <>
       <Navbar />
-      <MoreAboutSection />
+      <About />
       <CapabilitiesSection />
       <ExperienceSection />
       <ContactSection />

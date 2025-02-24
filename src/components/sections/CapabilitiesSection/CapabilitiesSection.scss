@@ -1,22 +1,50 @@
 @use '../../../sass/abstract/variables' as *;
+@use '../../../sass/abstract/mixins' as *;
 
 .capabilities-section {
-  max-width: 144rem;
+  max-width: 130rem;
   margin: 0 auto;
   padding: 8rem 10.8rem;
   border-bottom: 1px solid $secondary-background-color;
   display: flex;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+
+  @include respond(phone) {
+    padding: 8rem 1.6rem;
+  }
+
+  @include respond(big-desktop) {
+    max-width: 144rem;
+  }
 
   &__title {
     flex: 1 0 50%;
     font-size: 7.6rem;
     line-height: 7.6rem;
     color: $white-color;
+
+    @include respond(tab-port) {
+      font-size: 6.6rem;
+      line-height: 6.6rem;
+    }
+    @include respond(phone) {
+      margin-bottom: 1.2rem;
+      font-size: 4.3rem;
+      line-height: 4.3rem;
+    }
   }
 
   &__description {
     margin-bottom: 3.2rem;
     font-size: 1.8rem;
+
+    @include respond(tab-port) {
+      font-size: 1.6rem;
+      line-height: 2.5rem;
+    }
   }
 
   &__list {
@@ -27,6 +55,11 @@
     font-size: 1.6rem;
     line-height: 1.6rem;
     font-weight: 700;
+
+    @include respond(tab-port) {
+      font-size: 1.4rem;
+      line-height: 1.4rem;
+    }
   }
 
   &__tag {

@@ -1,19 +1,20 @@
 import { Button } from '@components/ui'
-import './MoreAboutSection.scss'
+import './About.scss'
 import about from '../../../assets/images/about-image.png'
+import aboutResponsive from '../../../assets/images/about-image-responsive.png'
 
-export const MoreAboutSection: React.FC = () => {
+export const About: React.FC = () => {
   return (
-    <section className='more-about' id='more-about'>
-      <div className='more-about__details'>
-        <h2 className='more-about__title'>About Me</h2>
+    <section className='about' id='about'>
+      <div className='about__details'>
+        <h2 className='about__title'>About Me</h2>
 
-        <div className='more-about__box-info'>
-          <h3 className='more-about__subtitle'>I am a front-end developer based in Sydney. Has Mechanical Engineering background. </h3>
+        <div className='about__box-info'>
+          <h3 className='about__subtitle'>I am a front-end developer based in Sydney. Has Mechanical Engineering background. </h3>
 
-          <p className='more-about__description'>I am a front-end developer based in Sydney looking for exciting opportunities. Has Mechanical Engineering background. Likes to focus on accessibility when developing. Passionate and curious about solving problems. Currently, I’m exploring Reactjs, Webflow and a bit of Designing. While I am not programming, I enjoy playing football, photography and playing Valorant. Learning more to improve skill.</p>
+          <p className='about__description'>I am a front-end developer based in Sydney looking for exciting opportunities. Has Mechanical Engineering background. Likes to focus on accessibility when developing. Passionate and curious about solving problems. Currently, I’m exploring Reactjs, Webflow and a bit of Designing. While I am not programming, I enjoy playing football, photography and playing Valorant. Learning more to improve skill.</p>
 
-          <div className='more-about__contact-buttons'>
+          <div className='about__contact-buttons'>
             <Button
               url="#"
               variant='primary'
@@ -51,8 +52,12 @@ export const MoreAboutSection: React.FC = () => {
         </div>
       </div>
 
-      <div className="more-about__photo">
-        <img src={about} alt="photo of person" />
+      <div className="about__photo">
+        <picture>
+          <source srcSet={about} media='(min-width: 901px)' />
+          <img src={aboutResponsive} alt="Project photo" />
+        </picture>
+        {/* <img src={about} alt="photo of person" /> */}
       </div>
     </section>
   )

@@ -1,9 +1,9 @@
 import { Link } from 'react-router';
-import './AboutSection.scss';
+import './AboutHome.scss';
 import aboutHomeImage from '../../../assets/images/about-home-image.png'
 
 
-export const AboutSection: React.FC = () => {
+export const AboutHome: React.FC = () => {
   return (
     <section className='about-section'>
       <h2 className='about-section__title'>About Me</h2>

@@ -1,21 +1,49 @@
 @use '../../../sass/abstract/variables' as *;
+@use '../../../sass/abstract/mixins' as *;
 
 .experience-section {
-  max-width: 144rem;
+  max-width: 130rem;
   margin: 0 auto;
   padding: 8rem 10.8rem;
   border-bottom: 1px solid $secondary-background-color;
   display: flex;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+
+  @include respond(phone) {
+    padding: 8rem 1.6rem;
+  }
+
+  @include respond(big-desktop) {
+    max-width: 144rem;
+  }
 
   &__title {
     flex: 1 0 50%;
     font-size: 7.6rem;
     line-height: 7.6rem;
     color: $white-color;
+
+    @include respond(tab-port) {
+      margin-bottom: 3.2rem;
+      font-size: 6.6rem;
+      line-height: 6.6rem;
+    }
+
+    @include respond(phone) {
+      font-size: 4.3rem;
+      line-height: 4.3rem;
+    }
   }
 
   &__group-info:not(:last-child) {
     margin-bottom: 8rem;
+
+    @include respond(tab-port) {
+      margin-bottom: 4rem;
+    }
   }
 
   &__position {
@@ -27,6 +55,20 @@
     font-weight: 500;
     color: $white-color;
     line-height: 3.1rem;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      align-items: flex-start;
+
+      font-size: 1.8rem;
+      line-height: 2.3rem;
+
+      span {
+        color: $text-color;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+      }
+    }
   }
 
   &__duration {
@@ -44,5 +86,11 @@
 
   &__details {
     margin-top: 1.6rem;
+
+    @include respond(tab-port) {
+      margin-top: 1.2rem;
+      font-size: 1.6rem;
+      line-height: 2.5rem;
+    }
   }
 }

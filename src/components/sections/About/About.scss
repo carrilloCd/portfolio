@@ -1,0 +1,94 @@
+@use '../../../sass/abstract/variables' as *;
+@use '../../../sass/abstract/mixins' as *;
+
+.about {
+  padding: 16rem 10.8rem 4rem 10.8rem;
+  margin: 0 auto;
+  max-width: 130rem;
+
+  @include respond(tab-port) {
+    padding: 8rem 10.8rem 0 10.8rem;
+  }
+  @include respond(phone) {
+    padding: 8rem 1.6rem 0;
+  }
+
+  @include respond(big-desktop) {
+    max-width: 144rem;
+  }
+
+  &__details {
+    margin-bottom: 12rem;
+    display: flex;
+    gap: 21.3rem;
+
+    @include respond(tab-land) {
+      gap: 15rem;
+    }
+    @include respond(tab-port) {
+      margin-bottom: 8rem;
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
+  &__title {
+    flex: 1 0 30.7rem;
+    font-size: 10.1rem;
+    line-height: 9rem;
+    color: $white-color;
+
+    @include respond(tab-port) {
+      font-size: 8rem;
+      margin-bottom: 1.6rem;
+      flex: 0;
+    }
+
+    @include respond(phone) {
+      font-size: 5.7rem;
+      line-height: 5.7rem;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 1.6rem;
+    font-family: $font-secondary;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    color: $white-color;
+
+    @include respond(tab-port) {
+      font-size: 2.5rem;
+      margin-bottom: 0.8rem;
+    }
+
+    @include respond(phone) {
+      font-size: 2.4rem;
+      line-height: 3.3rem;
+    }
+  }
+
+  &__description {
+    margin-bottom: 5.3rem;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+
+    @include respond(tab-port) {
+      font-size: 1.6rem;
+      line-height: 2.5rem;
+    }
+  }
+
+  &__contact-buttons {
+    display: flex;
+    gap: 1.6rem;
+  }
+
+  &__photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.6rem;
+    background-color: $text-color;
+  }
+}
