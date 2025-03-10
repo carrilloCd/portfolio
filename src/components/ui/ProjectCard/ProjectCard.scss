@@ -7,34 +7,38 @@
 
   @include respond(tab-port) {
     flex-direction: column;
-    align-items: center;
+
     gap: 4rem;
   }
 
   &__image-container {
     border-radius: 1.2rem;
     position: relative;
-    width: 60rem;
     padding: 12.6rem 5.7rem;
     background-color: $secondary-background-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @include respond(tab-land) {
       flex: 1 0 50%;
       padding: 12.6rem 3.2rem;
 
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
       img {
         width: 100%;
+        border-radius: 1.4rem;
       }
     }
 
-    @include respond(tab-port) {
-      padding: 0;
-      width: 100%;
+    &:first-child {
+      @include respond(tab-port) {
+        padding: 8rem 3.2rem;
+      }
     }
+  }
+
+  &__image {
+    border-radius: 1.4rem;
   }
 
   &__tag {

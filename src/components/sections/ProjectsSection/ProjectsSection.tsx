@@ -2,10 +2,10 @@ import './ProjectsSection.scss'
 import { ProjectCard } from '@components/ui'
 
 
-import landingProject from '../../../assets/images/landing-project.png'
+import landingProject from '../../../assets/images/positivus-landing-project.png'
 import blogSite from '../../../assets/images/blog-site.png'
 import eCommerce from '../../../assets/images/e-commerce.png'
-import landingProject900 from '../../../assets/images/landing-project-900.png'
+// import landingProject900 from '../../../assets/images/landing-project-900.png'
 import blogSite900 from '../../../assets/images/blogSite900.png'
 import eCommerce900 from '../../../assets/images/eCommerce900.png'
 
@@ -21,13 +21,13 @@ export const ProjectsSection: React.FC = () => {
         <ProjectCard
           tag='Conceptual Work'
           img={landingProject}
-          title='Promotional landing page for our favorite show'
-          description='Teamed up with a designer to breathe life into a promotional webpage for our beloved show, Adventure Time. Delivered a fully responsive design with dynamic content capabilities, seamlessly integrating a newsletter feature to keep fans updated with the latest adventures.'
-          year='2023'
+          title='Positivus Digital Marketing Agency Website'
+          description='This project is a comprehensive website designed to help businesses thrive online. As my first major portfolio project, I served as the front-end developer, responsible for developing a responsive, user-friendly platform using React, Typescript, SASS and React-Router.'
+          year='2025'
           role='Front-end developer'
-          demoUrl='#'
-          githubUrl='#'
-          imgResponsive={landingProject900}
+          demoUrl='https://carrillocd.github.io/positivus-landing-page/'
+          githubUrl='https://github.com/carrilloCd/positivus-landing-page'
+          imgResponsive={landingProject}
         />
 
         <ProjectCard

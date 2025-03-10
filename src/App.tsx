@@ -1,6 +1,6 @@
 import { PropsWithChildren, useLayoutEffect } from 'react';
 import { HomePage, AboutPage } from './pages';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router';
+import { HashRouter, Routes, Route, useLocation } from 'react-router';
 
 const Wrapper: React.FC<PropsWithChildren> = ({ children }) => {
   const location = useLocation();
@@ -12,14 +12,14 @@ const Wrapper: React.FC<PropsWithChildren> = ({ children }) => {
 
 export const App: React.FC = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Wrapper>
         <Routes>
           <Route index element={<HomePage />} />
           <Route path="about" element={<AboutPage />} />
         </Routes>
       </Wrapper>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 

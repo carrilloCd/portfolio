@@ -9,11 +9,11 @@ export const AboutHome: React.FC = () => {
       <h2 className='about-section__title'>About Me</h2>
 
       <div className='about-section__box-info'>
-        <h3 className='about-section__subtitle'>I am a front-end developer based in Sydney. Has Mechanical Engineering background. </h3>
+        <h3 className='about-section__subtitle'>I'm Carlos Carrillo, a Venezuelan-born front-end developer currently based in Lima, Peru. </h3>
 
-        <p className='about-section__description'>I am a front-end developer based in Sydney looking for exciting opportunities. Has Mechanical Engineering background. Likes to focus on accessibility when developing.
+        <p className='about-section__description'>I'm actively expanding my expertise in React while continuously exploring opportunities to apply my skills and learn new technologies.
           <span>
-            Passionate and curious about solving problems. Currently, I’m exploring Reactjs, Webflow and a bit of Designing. While I am not programming, I enjoy playing football, photography and playing Valorant. Learning more to improve skill.
+            With a solid foundation in TypeScript, Git, GitHub, HTML, and CSS, I specialize in building fluid, responsive, and accessible web experiences. My portfolio reflects my passion for creating user-friendly interfaces, and I'm eager to contribute my skills to innovative projects.
           </span> </p>
 
         <Link to="about" className='button button--link'>More About Me</Link>

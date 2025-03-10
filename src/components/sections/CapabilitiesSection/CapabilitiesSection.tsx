@@ -6,8 +6,8 @@ const capabilities = [
   'JavaScript',
   'React',
   'Tailwind',
-  'Designing',
-  'Figma']
+  'Figma',
+  'Typescript', 'SASS']
 
 export const CapabilitiesSection: React.FC = () => {
   return (
@@ -15,7 +15,7 @@ export const CapabilitiesSection: React.FC = () => {
       <h2 className="capabilities-section__title">My Capabilities</h2>
 
       <div>
-        <p className="capabilities-section__description">I am always looking to add more skills.Morbi egestas neque eu blandit fermentum. Nulla ac lobortis ligula. Pellentesque ac ex at purus faucibus tristique ut et dolor. </p>
+        <p className="capabilities-section__description">I’m a front-end developer with a strong foundation in modern web technologies. I’m dedicated to creating fluid, responsive, and accessible digital experiences. My key capabilities include: </p>
 
         <ul className="capabilities-section__list">
           {capabilities.map((capability) => (

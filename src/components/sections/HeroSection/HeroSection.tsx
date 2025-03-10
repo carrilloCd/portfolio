@@ -8,7 +8,7 @@ export const HeroSection: React.FC = () => {
     <section className='hero-section'>
       <div className='hero-section__box-info'>
         <h1 className='hero-section__title'>Hi, I am <br /> Carlos Carrillo.</h1>
-        <p className='hero-section__description'>A Sydney based front-end developer <br /> passionate about building accessible and user friendly websites. </p>
+        <p className='hero-section__description'>A Lima-based front-end developer <br /> passionate about building accessible and user friendly websites. </p>
 
         <div className='hero-section__contact-buttons'>
           <Button

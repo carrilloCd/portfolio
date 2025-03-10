@@ -35,7 +35,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 
         <picture>
           <source srcSet={img} media='(min-width: 901px)' />
-          <img src={imgResponsive} alt="Project photo" />
+          <img className='project__image' src={imgResponsive} alt="Project photo" />
         </picture>
       </div>
 
@@ -81,6 +81,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
               }
               url={demoUrl}
               variant='link'
+              blank
             />
           }
 
@@ -94,6 +95,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
               }
               url={githubUrl}
               variant='link'
+              blank
             />
           }
 
@@ -107,6 +109,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
               }
               url={viewUrl}
               variant='link'
+              blank
             />
           }
         </div>

@@ -103,6 +103,10 @@
     letter-spacing: -1px;
     color: $text-color;
 
+    &:hover {
+      color: $accent-color;
+    }
+
     @include respond(tab-port) {
       &:hover {
         color: #000;

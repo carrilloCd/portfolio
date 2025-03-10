@@ -3,6 +3,10 @@ import './About.scss'
 import about from '../../../assets/images/about-image.png'
 import aboutResponsive from '../../../assets/images/about-image-responsive.png'
 
+
+
+
+
 export const About: React.FC = () => {
   return (
     <section className='about' id='about'>
@@ -10,9 +14,9 @@ export const About: React.FC = () => {
         <h2 className='about__title'>About Me</h2>
 
         <div className='about__box-info'>
-          <h3 className='about__subtitle'>I am a front-end developer based in Sydney. Has Mechanical Engineering background. </h3>
+          <h3 className='about__subtitle'>My name is Carlos Carrillo <br /> a Venezuelan-born front-end developer based in Lima, Peru. </h3>
 
-          <p className='about__description'>I am a front-end developer based in Sydney looking for exciting opportunities. Has Mechanical Engineering background. Likes to focus on accessibility when developing. Passionate and curious about solving problems. Currently, I’m exploring Reactjs, Webflow and a bit of Designing. While I am not programming, I enjoy playing football, photography and playing Valorant. Learning more to improve skill.</p>
+          <p className='about__description'>I'm actively expanding my expertise in React while continuously exploring opportunities to apply my skills and learn new technologies. I specialize in building fluid, responsive, and accessible web experiences. My portfolio reflects my passion for creating user-friendly interfaces, and I'm eager to contribute my skills to innovative projects.</p>
 
           <div className='about__contact-buttons'>
             <Button

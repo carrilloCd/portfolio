@@ -7,15 +7,18 @@ export const ExperienceSection: React.FC = () => {
 
       <div>
         <div className='experience-section__group-info'>
-          <h3 className='experience-section__position'>Freelance Developer <span className='experience__duration'>Nov 2023 - Present</span></h3>
-          <p className='experience-section__details'>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        </div>
+          <h3 className='experience-section__role'>Freelance Front-end Developer <span className='experience-section__duration'>Feb 2023 – Mar 2025</span></h3>
 
-        <div className='experience-section__group-info'>
-          <h3 className='experience-section__position'>Front-End Intern <span className='experience__duration'>Sep 2023 — Nov 2023</span></h3>
-          <p className='experience-section__company'>Roos Tech</p>
+          <div>
+            <p className='experience-section__company'>To-Do Application:</p>
+            <p className='experience-section__details'>Developed a responsive and intuitive task management app that allows users to create, edit, and delete tasks seamlessly.</p>
 
-          <p className='experience-section__details'>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p className='experience-section__company'>Notes List App:</p>
+            <p className='experience-section__details'>Designed and implemented a clean notes management system, enhancing usability and functionality.</p>
+
+            <p className='experience-section__company'>Quiz Game</p>
+            <p className='experience-section__details'>Built interactive quiz games using React, providing engaging and dynamic user experiences.</p>
+          </div>
         </div>
       </div>
     </section>
