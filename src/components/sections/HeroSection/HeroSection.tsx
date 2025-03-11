@@ -1,7 +1,6 @@
 import './HeroSection.scss';
 import { Button } from '@components/ui';
-
-// import img from '../../../assets/images/hero-image.png'
+import { scrollToSection } from '@utils/index';
 
 export const HeroSection: React.FC = () => {
   return (
@@ -12,9 +11,10 @@ export const HeroSection: React.FC = () => {
 
         <div className='hero-section__contact-buttons'>
           <Button
-            url="#contact"
+            url=""
             variant='primary'
             text='Contact me'
+            onClick={() => scrollToSection("contact")}
             icon={
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="">
                 <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
@@ -23,7 +23,7 @@ export const HeroSection: React.FC = () => {
           />
 
           <Button
-            url="https://www.linkedin.com"
+            url="https://www.linkedin.com/in/carlos-carrillo-182786258/"
             variant='icon'
             icon={
               <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -35,7 +35,7 @@ export const HeroSection: React.FC = () => {
           />
 
           <Button
-            url="https://www.github.com"
+            url="https://github.com/carrilloCd"
             variant='icon'
             icon={
               <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,10 +49,7 @@ export const HeroSection: React.FC = () => {
         </div>
       </div>
 
-      <div className="hero-section__image">
-        {/* <img src={img} alt="carlos carrillo photo" /> */}
-      </div>
-
+      <div className="hero-section__image"></div>
     </section>
   )
 }

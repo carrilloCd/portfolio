@@ -3,11 +3,11 @@ import { ProjectCard } from '@components/ui'
 
 
 import landingProject from '../../../assets/images/positivus-landing-project.png'
-import blogSite from '../../../assets/images/blog-site.png'
-import eCommerce from '../../../assets/images/e-commerce.png'
-// import landingProject900 from '../../../assets/images/landing-project-900.png'
-import blogSite900 from '../../../assets/images/blogSite900.png'
-import eCommerce900 from '../../../assets/images/eCommerce900.png'
+// import blogSite from '../../../assets/images/blog-site.png'
+// import eCommerce from '../../../assets/images/e-commerce.png'
+// // import landingProject900 from '../../../assets/images/landing-project-900.png'
+// import blogSite900 from '../../../assets/images/blogSite900.png'
+// import eCommerce900 from '../../../assets/images/eCommerce900.png'
 
 export const ProjectsSection: React.FC = () => {
   return (
@@ -30,7 +30,7 @@ export const ProjectsSection: React.FC = () => {
           imgResponsive={landingProject}
         />
 
-        <ProjectCard
+        {/* <ProjectCard
           img={blogSite}
           title='Blog site for World News'
           description='Mastered CSS Grid complexities in building an innovative news homepage, navigating intricate design decisions for a seamless user experience. Leveraged the challenge to enhance skills in  front-end development.'
@@ -51,7 +51,7 @@ export const ProjectsSection: React.FC = () => {
           demoUrl='#'
           githubUrl='#'
           imgResponsive={eCommerce900}
-        />
+        /> */}
 
       </div>
 

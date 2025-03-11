@@ -26,7 +26,8 @@
     "baseUrl": "src",
     "paths": {
       "@components/*": ["components/*"],
-      "@sass/*": ["sass/*"]
+      "@utils/*": ["utils/*"],
+      "@assets/*": ["assets/*"]
     }
   },
   "include": ["src"]

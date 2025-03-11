@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import './Navbar.scss'
 import { Link, useLocation } from 'react-router'
+import { scrollToSection } from '@utils/index';
+
+
 
 export const Navbar: React.FC = () => {
   const location = useLocation();
@@ -10,12 +13,7 @@ export const Navbar: React.FC = () => {
     setIsOpen(isOpen => !isOpen);
   }
 
-  const scrollToSection = (id: string) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+
 
   return (
     <nav className='navbar'>
